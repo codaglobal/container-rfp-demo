@@ -7,13 +7,13 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      name: ep-demo
+      name: helm-demo
       release: v1
   strategy: {}
   template:
     metadata:
       labels:
-        name: ep-demo
+        name: helm-demo
         release: v1
       creationTimestamp: null
     spec:
