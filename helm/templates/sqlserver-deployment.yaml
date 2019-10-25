@@ -1,0 +1,33 @@
+apiVersion:  apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: sqlserver
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: ep-demo
+      release: v1
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        name: ep-demo
+        release: v1
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: ACCEPT_EULA
+          value: "Y"
+        - name: SA_PASSWORD
+          value: yourStrong(!)Password
+        image: mcr.microsoft.com/mssql/server
+        name: sqlserver
+        ports:
+        - containerPort: 1433
+        resources: {}
+      hostname: sqlserver
+      restartPolicy: Always
+status: {}

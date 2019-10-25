@@ -1,0 +1,12 @@
+apiVersion: v1
+deprecated: false
+description: Phase 1 of EP Kubernetes Demo
+icon: https://github.com/kubernetes/kubernetes/blob/master/logo/logo.png
+name: ep-kube-demo-part1
+version: 0.0.1
+sources:
+  - https://github.com/kubernetes/contrib/tree/master/cluster-autoscaler/cloudprovider/awshttps://github.com/codaglobal/container-rfp-demo
+maintainers:
+  - name: Ryan Smith
+    email: ryan.smith@coda.global
+engine: gotpl

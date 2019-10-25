@@ -1,0 +1,25 @@
+apiVersion:  apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: subscriber
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: ep-demo
+      release: v1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        name: ep-demo
+        release: v1
+    spec:
+      containers:
+      - image: smithrh/public-tests:ep-subscriber-v1
+        name: subscriber
+        resources: {}
+      restartPolicy: Always
+status: {}
