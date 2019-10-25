@@ -5,7 +5,7 @@ Containers included:
   - SQLServer (deafult)
   - RabbitMQ (default)
  
-This helm chart is the result of converting https://github.com/codaglobal/container-rfp-demo/blob/master/src/docker-compose.yml to a helm chart
+This helm chart is the result of converting https://github.com/codaglobal/container-rfp-demo/blob/master/src/docker-compose.yml 
 
 Additional resources:
  - Install Docker Desktop for Windows: https://hub.docker.com/editions/community/docker-ce-desktop-windows
