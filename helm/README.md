@@ -20,7 +20,7 @@ Additional resources:
     - `helm list demo`
   - Check the Kubernetes service/deployment/pod status:
     - `kubectl get services`
-        - Services are available via minikube's IP address:<service port>.  For example, http://192.168.13.21:30429/
+        - Services are available via minikube's IP address:service port.  For example, http://192.168.13.21:30429/
     - `kubectl get deployments`
     - `kubectl get pods`
   - Get minikube IP (to access deployed services)
@@ -31,3 +31,6 @@ Additional resources:
     - `kubectl scale --replicas=0 deployment/rabbitmq`
     - `kubectl scale --replicas=0 deployment/migrator`
   - To delete the deployment: `helm delete --name demo`
+
+
+  The remaining containers are left as an excersize to the user.
