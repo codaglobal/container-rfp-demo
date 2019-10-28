@@ -1,6 +1,6 @@
 # Kubernetes Demo - Part 1
 
-This helm chart is the product of extracting and converting the Migrator, Subscriber, SQLServer, and RabbitMQ sections of https://github.com/codaglobal/container-rfp-demo/blob/master/src/docker-compose.yml.  The remaining containers and services are left as an excersise.
+This helm chart is the product of extracting and converting the Migrator, Subscriber, SQLServer, and RabbitMQ sections of https://github.com/codaglobal/container-rfp-demo/blob/master/src/docker-compose.yml.  The remaining containers and services are left as an exercise.
 
 Containers included:
   - Migrator
