@@ -1,13 +1,14 @@
-## Kubernetes Demo - Part 1
+# Kubernetes Demo - Part 1
+
+This helm chart is the product of extracting and converting the Migrator, Subscriber, SQLServer, and RabbitMQ sections of https://github.com/codaglobal/container-rfp-demo/blob/master/src/docker-compose.yml.  The remaining containers and services are left as an excersize.
+
 Containers included:
   - Migrator
   - Subscriber
-  - SQLServer (deafult)
-  - RabbitMQ (default)
+  - SQLServer
+  - RabbitMQ 
  
-This helm chart is the result of converting https://github.com/codaglobal/container-rfp-demo/blob/master/src/docker-compose.yml 
-
-When starting this helm chart, it is key to have the RabbitMQ and SQLServer containers online first.  Once those are running, increase the 'replicas' value for the Migrator from 0 to 1.  Once the migrator is done, reduces the 'replicas' back to 0.  Increase the Subscriber 'replicas' as desired.  
+When starting this helm chart, it is key to have the RabbitMQ and SQLServer containers online first.  Once those are running, increase the 'replicas' value for the Migrator from 0 to 1.  Once the migrator , reduces the 'replicas' back to 0.  Increase the Subscriber 'replicas' as desired.  
 
 To update the 'replicas' values, it is recommended you update the templates and deploy the upgrade via helm.  The same can be achieved by using kubectl, but that will create drift between the deployment and the helm template(s).  Both commands are listed below.
 The deployment templates are set with the folllowing default 'replicas' values:
@@ -37,8 +38,6 @@ The deployment templates are set with the folllowing default 'replicas' values:
     - `helm rollback helm-demo 4`
         - Notice the change in revision number on `helm list demo`, the rollback is another new version number
   - To delete the deployment: `helm delete --name demo`
-
-  Deploying the remaining containers are left as an excersize to the user.
 
 ## Native Kubernetes Command  Cheat Sheet
   - Check the Kubernetes service/deployment/pod status:
