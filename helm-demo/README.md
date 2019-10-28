@@ -17,6 +17,8 @@ The deployment templates are set with the folllowing default 'replicas' values:
   - Migrator: 0
   - Subscriber: 0
 
+A pre-packaged version of this chart is in the helm-demo directory for deployment testing: helm-demo-0.0.1.tgz 
+
 ## Additional resources:
  - Installing Docker Desktop for Windows: https://hub.docker.com/editions/community/docker-ce-desktop-windows
  - Installing kubectl: https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-linux 
@@ -37,7 +39,11 @@ The deployment templates are set with the folllowing default 'replicas' values:
   - Rollback the helm deployment (in this case to version 4)
     - `helm rollback helm-demo 4`
         - Notice the change in revision number on `helm list demo`, the rollback is another new version number
-  - To delete the deployment: `helm delete --name demo`
+  - To delete the deployment
+    - `helm delete --name demo`
+  - Package the helm chart into a deployable .tgz file (run from repository root directory)
+    - `helm package  .\helm-demo\`
+      - The package command will read the version information from the Chart and name the .tgz file accordingly
 
 ## Native Kubernetes Command  Cheat Sheet
   - Check the Kubernetes service/deployment/pod status:
