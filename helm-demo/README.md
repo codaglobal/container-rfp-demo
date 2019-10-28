@@ -34,7 +34,10 @@ A pre-packaged version of this chart is in the helm-demo directory for deploymen
 
 ## Helm Command Cheat Sheet
   - Install the Helm chart, from the root of this repo 
-    - `helm install --name demo .\helm --set service.type=NodePort`
+    - Directory based
+      - `helm install --name demo .\helm --set service.type=NodePort`
+    - Package file based
+      - `helm install --name demo .\helm-demo\helm-demo-0.0.1.tgz --set service.type=NodePort `
   - Check the Helm deployment status:
     - `helm list --all`
     - `helm list demo`
