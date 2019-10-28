@@ -24,7 +24,7 @@ The deployment templates are set with the folllowing default 'replicas' values:
 
 A pre-packaged version of this chart is in the helm-demo directory for deployment testing: helm-demo-0.0.1.tgz 
 
-## Additional resources:
+## Additional resources (demo built with Windows in mind, but not limited to it):
  - Installing Docker Desktop for Windows: https://hub.docker.com/editions/community/docker-ce-desktop-windows
  - Installing kubectl: https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-windows
  - Installing minikube: https://kubernetes.io/docs/tasks/tools/install-minikube/#install-minikube-using-chocolatey
