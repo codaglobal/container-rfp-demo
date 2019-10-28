@@ -26,10 +26,9 @@ A pre-packaged version of this chart is in the helm-demo directory for deploymen
 
 ## Additional resources:
  - Installing Docker Desktop for Windows: https://hub.docker.com/editions/community/docker-ce-desktop-windows
- - Installing kubectl: https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-linux 
- - Installing minikube: https://kubernetes.io/docs/tasks/tools/install-minikube/
- - Installing Helm & Tiller: https://helm.sh/docs/using_helm/
-    - recommend using the choco install option for Windows
+ - Installing kubectl: https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-windows
+ - Installing minikube: https://kubernetes.io/docs/tasks/tools/install-minikube/#install-minikube-using-chocolatey
+ - Installing Helm & Tiller: https://helm.sh/docs/using_helm/#installing-helm
     - Tiller is installed at the bottom of that page
 
 ## Helm Command Cheat Sheet
