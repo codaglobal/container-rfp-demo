@@ -7,6 +7,10 @@ Containers included:
   - Subscriber
   - SQLServer
   - RabbitMQ 
+
+  The Migrator and Subscriber containers were built from https://github.com/codaglobal/container-rfp-demo/tree/master/src/Migrator and https://github.com/codaglobal/container-rfp-demo/tree/master/src/Subscriber, and the images are pulled from my public registry: https://cloud.docker.com/repository/docker/smithrh/public-tests/general.
+
+  The SQLServer and RabbitMQ containers are pulled from their respective source registries.
  
 When starting this helm chart, it is key to have the RabbitMQ and SQLServer containers online first.  Once those are running, increase the 'replicas' value for the Migrator from 0 to 1.  Once the migrator , reduces the 'replicas' back to 0.  Increase the Subscriber 'replicas' as desired.  
 
