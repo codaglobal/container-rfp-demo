@@ -15,6 +15,7 @@ Containers included:
 When starting this helm chart, it is key to have the RabbitMQ and SQLServer containers online first.  Once those are running, increase the 'replicas' value for the Migrator from 0 to 1.  Once the migrator , reduces the 'replicas' back to 0.  Increase the Subscriber 'replicas' as desired.  
 
 To update the 'replicas' values, it is recommended you update the templates and deploy the upgrade via helm.  The same can be achieved by using kubectl, but that will create drift between the deployment and the helm template(s).  Both commands are listed below.
+
 The deployment templates are set with the folllowing default 'replicas' values:
   - RabbitMQ: 1
   - SQLServer: 1
